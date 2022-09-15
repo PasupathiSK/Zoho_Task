@@ -185,15 +185,7 @@ public String mergeMultipleString(String inputArray[])throws UserDefinedExceptio
 checkNull(inputArray);
 String newString="";
 int length=inputArray.length;
-for(int i=0;i<length;i++){
-if(i==0){
-newString=newString.concat(inputArray[i]);
-}
-else{
-newString=newString.concat("-").concat(inputArray[i]);
-}
-}
-return newString;
+return newString.join(inputArray,"-");
 }
 //check two strings are equal
 public boolean stringEqual(String firstString,String secondString)throws UserDefinedException{
