@@ -1,2 +1,0 @@
-module String_task {
-}
